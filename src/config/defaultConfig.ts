@@ -12,10 +12,10 @@ export const defaultConfig = {
     defaultLocale: DEFAULT_LOCALE,
     locales: LOCALES,
   },
-  get initImmediate(): boolean { // i18next < 24
+  get initAsync(): boolean {
     return typeof window !== 'undefined'
   },
-  get initAsync(): boolean {
+  get initImmediate(): boolean { // i18next < 24
     return typeof window !== 'undefined'
   },
   interpolation: {

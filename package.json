@@ -70,6 +70,7 @@
     "example:simple:prod": "npm run build:example:simple && cd examples/simple && npm run start",
     "example:ssg": "npm run build && cp -r dist examples/ssg/node_modules/next-i18next && cd examples/ssg && npm run dev",
     "example:ssg:prod": "npm run build:example:ssg && cd examples/ssg && npm run start",
+    "example:auto-static-optimize": "npm run build && cp -r dist examples/auto-static-optimize/node_modules/next-i18next && cd examples/auto-static-optimize && npm run dev",
     "prepublishOnly": "npm run build",
     "contributors:check": "all-contributors check",
     "contributors:add": "all-contributors add",

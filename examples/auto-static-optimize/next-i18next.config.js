@@ -20,6 +20,7 @@ module.exports = {
     ], // 1 hour
     backends: isBrowser ? [LocalStorageBackend, HttpBackend] : [],
   },
+  clientAwaitInit: true,
   // https://www.i18next.com/overview/configuration-options#logging
   debug: isDev,
   i18n: {

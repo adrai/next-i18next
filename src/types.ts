@@ -34,6 +34,7 @@ type NextJsI18NConfig = {
 type DefaultNamespace = TypeOptions['defaultNS']
 
 export type UserConfig = {
+  clientAwaitInit?: boolean
   i18n: NextJsI18NConfig
   localeExtension?: string
   localePath?:
@@ -49,7 +50,6 @@ export type UserConfig = {
   reloadOnPrerender?: boolean
   serializeConfig?: boolean
   use?: any[]
-  clientAwaitInit?: boolean
 } & InitOptions
 
 export type InternalConfig = Omit<UserConfig, 'i18n'> &
